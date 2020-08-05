@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="showQuestion(0);">
+
+  <div class="container">
+    <div class="main mx-auto text-center mt-5">
+    <div class="row ">
+        <div class="col">
+            <h1>Welcome</h1>
+            <div class="para">
+            <p><b>You have to take the quiz, <br> Remember once you attempt the question <br> there is no option to go back <br>to the previous question! <br> Best of luck.</b></p>
+        </div>
+            <input id="user"> </input>
+            <br>
+            <a href="javascript:void(0)" class="btn btn-primary btnNext mt-2"  onclick="checkUser()">Start Quiz</a>
+        
+           
+        </div>
+    </div>
+</div>
+  </div>
+
+
+    <div class="container myDiv">
+      <div class="card text-center mx-auto" >
+        <div class="card-header " id="userName">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" id="questionElement">Question Will Be here</h5>
+          <p class="card-text options" onclick="activeClass(this)" class="">Option 1</p>
+          <p class="card-text options" onclick="activeClass(this)" class="">Option 2</p>
+          <p class="card-text options" onclick="activeClass(this)" class=""> Option 3</p>
+          <p class="card-text options" onclick="activeClass(this)" class=""> Option 4</p>
+          <a href="#" class="btn btn-primary btnNext" onclick="nextQuestion();">Next Question</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+
+    
+
+      
+    </div>
+      <script src="app.js"></script>
+    
+</body>
+</html>
